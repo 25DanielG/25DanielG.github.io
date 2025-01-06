@@ -57,7 +57,7 @@ gsap.to(parts, {
             const secWidth = totWidth / parts.length;
             const ind = Math.floor(scrollX / secWidth);
             const fade = Math.abs(scrollX - secWidth) / secWidth * 100;
-            fixed.innerHTML = indexed[ind];
+            fixed.innerHTML = indexed[ind] || "";
             fixed.style.opacity = fade / 100;
         },
     }
