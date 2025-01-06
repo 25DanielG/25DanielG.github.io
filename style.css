@@ -37,7 +37,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-wrap: nowrap;
-  width: 300dvw;
+  width: 400dvw;
 }
 
 .content-section > div {
@@ -367,6 +367,18 @@ span.reflection {
 .frame.right {
   left: 80%;
   transform: rotateX(10deg) rotateY(9deg) rotateZ(14deg);
+}
+
+.frame.wide {
+  width: 400px;
+}
+
+.frame.right.less {
+  left: 60% !important;
+}
+
+.frame.up {
+  top: -15% !important;
 }
 
 .frame.right:hover {

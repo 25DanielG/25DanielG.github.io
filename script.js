@@ -56,7 +56,8 @@ gsap.to(parts, {
             const scrollX = Math.abs(self.scroll() - 1787);
             const secWidth = totWidth / parts.length;
             const ind = Math.floor(scrollX / secWidth);
-            const fade = Math.abs(scrollX - secWidth) / secWidth * 100;
+            const fade = Math.abs(scrollX - (secWidth * ind)) / secWidth * 100;
+            console.log(scrollX + " " + ind + " " + fade);
             fixed.innerHTML = indexed[ind] || "";
             fixed.style.opacity = fade / 100;
         },
