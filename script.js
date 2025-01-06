@@ -41,7 +41,7 @@ gsap.to(falpha, {
 });
 
 const parts = gsap.utils.toArray(".content-section > div");
-const indexed = ["as explored in", "is defined by"];
+const indexed = ["as explored in", "is defined by", "a balance between<h1>Faith</h1><h1>Suffering</h1>"];
 
 gsap.to(parts, {
     xPercent: -100 * (parts.length - 1),
@@ -57,7 +57,7 @@ gsap.to(parts, {
             const secWidth = totWidth / parts.length;
             const ind = Math.floor(scrollX / secWidth);
             const fade = Math.abs(scrollX - secWidth) / secWidth * 100;
-            fixed.innerText = indexed[ind];
+            fixed.innerHTML = indexed[ind];
             fixed.style.opacity = fade / 100;
         },
     }
