@@ -73,3 +73,5 @@ const lottieInstance = lottie.loadAnimation({
     autoplay: true,
     animationData: animationData
 });
+
+gsap.killTweensOf(".butterfly");
